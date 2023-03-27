@@ -1,0 +1,11 @@
+@font-face {
+    font-family: chris;
+    src: url(./Montserrat-VariableFont_wght.ttf)
+}
+* {
+    font-family: chris;
+}
+body {
+    width: 600px;
+    margin: auto;
+}
