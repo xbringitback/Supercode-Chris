@@ -1,0 +1,46 @@
+body {
+    width: 600px;
+    margin: auto;
+}
+@font-face {
+    font-family: Chris;
+    src: url(./FrederickatheGreat-Regular.ttf);
+}
+h3:hover {
+    font-family: Chris;
+    color:red;
+}
+li:nth-child(1) {
+    font-family: tahoma;
+    color: #4E342E;
+}
+li:nth-child(2) {
+    font-family: monospace;
+    color: #689F38;
+}
+li:nth-child(3) {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #EF5350;
+}
+p:nth-child(1) {
+    color: #999;
+}
+p:not(:last-child) {
+    font-size: 26px;
+}
+p:nth-of-type(even) {
+    color:#0277bd;
+}
+button {
+    background-image: linear-gradient(to top right, blue, purple);
+    margin:10px 200px
+}
+button:hover {
+    background-image: linear-gradient(to bottom right, purple, blue);
+    font-size: 20px;
+    color:white;
+}
+button:active{
+    background-image: linear-gradient(to bottom left,orange, purple);
+
+}

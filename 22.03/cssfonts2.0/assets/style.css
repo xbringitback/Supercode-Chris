@@ -1,0 +1,20 @@
+h1 {
+    font-size: 48px;
+    background-color: rgb(56, 56, 56);
+    color:white;
+    font-family: Tahoma;
+    text-align: center;
+}
+section{
+    text-indent: 50px;
+    word-spacing: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+article{
+    text-indent: 30px;
+    word-spacing: 5px;
+}
+h2 {
+    text-shadow: 5px 10px 10px black;
+    letter-spacing: 10px;
+}
