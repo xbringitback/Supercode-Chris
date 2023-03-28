@@ -1,0 +1,44 @@
+@font-face {
+    font-family: alkatra;
+    src: url(./Alkatra-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    background: url("./juniperphoton-ri90cak5u7E-unsplash.jpg") no-repeat center;
+    font-family: "alkatra", Arial, Helvetica, sans-serif;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    padding: 5%;
+}
+h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px rgb(255, 0, 234);
+    width: 90vw;
+    padding: 0 15%;
+    color: white;
+    background-color: rgba(14, 59, 85, 0.664);
+    border-radius: 10px;
+}
+article {
+    background-color:rgba(245, 245, 245, 0.452);
+    margin-top: 40px;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 40px 100px;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 1.5em;
+}
+p {
+    font-size: 14px;
+}
+p:nth-child(1),
+p:nth-child(4) {
+    margin-bottom: 2rem;
+}
