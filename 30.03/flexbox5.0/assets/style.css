@@ -1,0 +1,97 @@
+@font-face  {
+    font-family: lato;
+    src: url(./font/Lato-Regular.ttf);
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root {
+    --lato: "lato";
+    --black: black;
+}
+html {
+    font-family: var(--lato);
+    font-size: 62.5%;
+}
+
+/* header */
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: solid rgba(0, 0, 0, 0.082) 1px;
+    height: 76px;
+}
+nav section {
+    padding: 0 5vw;
+}
+nav ul {
+    padding: 0 20vw 0 0;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.6rem;
+    margin: 0 2vw
+}
+nav article {
+    margin: 0 2vw 0 0;
+}
+
+/* main */
+
+main section {
+    background-color:#D9E8E5;
+    height: 91.9vh;
+    padding: 10rem 15rem 20rem 15rem;
+}
+
+main article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main article div:nth-child(1){
+    background: url("./img/ring001.png") no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 25vh;
+}
+main article div:nth-child(2){
+    background: url("./img/ring002.png") no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 25vh;
+}
+main article div:nth-child(3){
+    background: url("./img/ring003.png") no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 25vh;
+}
+main article div:nth-child(4){
+    background: url("./img/ring004.png") no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 25vh;
+}
+main article div:nth-child(5){
+    background: url("./img/ring005.png") no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 25vh;
+}
+main article div:nth-child(6){
+    background: url("./img/ring006.png") no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 25vh;
+}

@@ -1,0 +1,110 @@
+@font-face  {
+    font-family: raleway;
+    src: url(./font/Raleway-Regular.ttf);
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+:root {
+    --raleway: "raleway";
+    --logo: #666;
+    --logohover: #333;
+    --colormenu:#333 ;
+    --colormenuhover:#337ab7;
+}
+html {
+    font-family: var(--raleway);
+}
+
+
+/* Header */
+
+header {
+    margin: 5px 0;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2vh 8vw;
+    border: solid rgba(0, 0, 0, 0.082) 1px;
+    height: 76px;
+    box-shadow: 0 1px 8px #ddd;
+}
+.logo {
+    color: var(--logo);
+    margin-right: auto;
+    font-size: 1.6rem;
+}
+.logo:hover {
+    color: var(--logohover);
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1rem;
+}
+header nav ul li a {
+    color: var(--colormenu);
+}
+header nav ul li a:hover {
+    color:var(--colormenuhover)
+}
+.fa-search::before {
+    content: "\f002";
+}
+/* Main */
+
+section {
+    background: url(./img/photo-1443527216320-7e744084f5a7-1.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    height: 90.8vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20vw;
+}
+section h1 {
+    color: white;
+    font-size: 3.6rem;
+    text-align: center;
+    font-weight:lighter;
+}
+section p {
+    color: white;
+    font-size: 0.85rem;
+    margin: 3vh 0;
+}
+section article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.btn1 {
+    color: white;
+    margin: 20px;
+    background-color:#745cf9;
+    padding: 2vh 5.2vw;
+    border-radius: 3px;
+}
+.btn2 {
+    color: white;
+    margin: 20px;
+    border: solid rgb(255, 255, 255) 1.5px;
+    padding: 2vh 3.2vw;
+    border-radius: 3px;
+}
+.btn1:hover {
+    background-color:#5234f9
+}
+.btn2:hover {
+    color: rgba(255, 255, 255, 0.795);
+}

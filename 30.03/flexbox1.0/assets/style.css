@@ -1,0 +1,30 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    background: url("./img/wolke2.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 3vw;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+header h2 {
+    color: white;
+    font-size: 5rem;
+}
+header article a {
+    font-size: 2rem;
+    margin: 1vw;
+    text-decoration: none;
+    color: white;
+}
