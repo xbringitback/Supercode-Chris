@@ -65,6 +65,7 @@ main article div:nth-child(1){
     width: 30vw;
     height: 25vh;
 }
+
 main article div:nth-child(2){
     background: url("./img/ring002.png") no-repeat center;
     background-size: cover;

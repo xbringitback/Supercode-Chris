@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <section>
+            <form>
+                <fieldset>
+
+                    <legend>Register form</legend>
+
+                    <label for="name">Name</label>
+                    <input placeholder="Name" required type="name" id="name"> <br>
+
+                    <label for="surname">Surname</label>
+                    <input placeholder="Surname" required type="surname" id="surname"> <br>
+
+                    <label for="email">Email</label>
+                    <input placeholder="Email" required type="email" id="email"> <br>
+
+                    <div>
+                        <label for="gender">Gender</label>
+                        <label for="male">Male</label>                    
+                        <input type="radio" id="male" name="gender" value="male"> 
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female"> <br>                        
+                    </div>
+
+
+                    <label for="file">Picture</label>
+                    <input type="file" id="file" /> <br>
+
+                    <label for="country"> Country</label>
+                    <select id="country">
+                        <option value="germany">Germany</option>
+                        <option value="spain">Spain</option>
+                        <option value="togo">Togo</option> 
+                    </select> <br>
+
+                    <label for="languages"> Preferred languages</label>
+                    <select id="languages" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">Css</option>
+                    <option value="js">JS</option> 
+                    <option value="react">React</option> 
+                    <option value="c#">C#</option> 
+                    </select>                        
+
+
+                    <p>(to choose more than one usw cmd key)</p> <br>
+
+                    <label for="checkbox">Fieled of activity</label>
+                    <input id="checkbox" type="checkbox">
+                    <label for="it">IT</label>
+                    <input id="checkbox" type="checkbox">
+                    <label for="design">Design</label>
+                    <input id="checkbox" type="checkbox">
+                    <label for="other">Other</label> <br>
+
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Cancel">
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>

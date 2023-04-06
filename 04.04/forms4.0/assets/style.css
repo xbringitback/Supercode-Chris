@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    max-width: 600px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+section {
+    margin-top: 200px;
+}
+fieldset {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 2.24) 0px 3px 8px;
+    border: none;
+    padding: 20px;
+}
