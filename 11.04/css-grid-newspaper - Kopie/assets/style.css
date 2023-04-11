@@ -1,0 +1,117 @@
+@font-face {
+    font-family: cormorant;
+    src: url(./fonts/CormorantGaramond-Regular.ttf)
+}
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: var(--maincolor);
+    /* border: solid; */
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --maincolor: rgb(233, 233, 224);
+    --cormo: "cormorant";
+}
+img {
+    max-width: 100%;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-family: var(--cormo);
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+/* header */
+
+header {
+    margin: 0 2vw;
+}
+header h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 3rem;
+}
+header h1::first-letter,
+header span {
+    font-size: 1.5em;
+}
+header nav {
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    text-align: center;
+    border-bottom: 4px double;
+    border-top: 4px double;
+    padding: 4px;
+}
+
+/* main */
+
+main {
+    /* display: flex; */
+    margin: 0 2vw;
+}
+
+/* section  */
+
+section{
+    display: grid;
+    grid-template-areas:
+    "header header header header header sponsor"
+    "text1 text2 pic pic pic sponsor"
+    "text3 text4 pic pic pic sponsor"
+    "text5 text6 pic pic pic sponsor";
+    gap:10px;
+}
+
+section h2 {
+    grid-area: header;
+    font-size: 3.5rem;
+    place-self: center center;
+    margin: 2vh 0;
+}
+.picture {
+    grid-area: pic;
+}
+.sponsors {
+    grid-area: sponsor;
+}
+.sponsors h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.addhere p{
+    text-align: center;
+    border:  4px double;
+    padding: 60px 0px;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: var(--cormo);
+}
+.knive {
+    text-align: center;
+    border:  4px double;
+    padding: 60px 15px;
+}
+.knive p:nth-of-type(2) {
+    text-decoration: underline;
+    color: rgba(128, 128, 128, 0.712);
+    font-size: 2rem;
+}
+.ikea {
+    border:  4px double;
+    padding: 20px;
+    background-color: var(--maincolor);
+}
+.ikea img {
+    filter: grayscale(100%);
+}

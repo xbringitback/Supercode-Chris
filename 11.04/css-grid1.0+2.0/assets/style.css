@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.grid-parent {
+    display: grid;
+    grid-template: 10% 80% / 1fr 1fr 3fr;
+    height: 100vh;
+    gap: 1px;
+}
+header {
+    background-color: blue;
+    grid-area: 1/4/1/1;
+}
+aside {
+    background-color: green;
+    grid-area: 2/1/2/1;
+}
+main {
+    background-color: red;
+    grid-area: 3/4/2/2;
+}
+footer {
+    background-color: purple;
+    grid-area: 3/4/3/1;
+}
