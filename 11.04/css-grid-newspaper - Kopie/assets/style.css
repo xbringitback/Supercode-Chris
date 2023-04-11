@@ -110,7 +110,6 @@ section h2 {
 .ikea {
     border:  4px double;
     padding: 20px;
-    background-color: var(--maincolor);
 }
 .ikea img {
     filter: grayscale(100%);
