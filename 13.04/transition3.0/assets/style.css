@@ -1,0 +1,25 @@
+section{
+    background-color: rgb(72, 207, 79);
+    height: 30vh;
+    width: 30vw;
+    margin: 30vh 20vw;
+    overflow: hidden;
+    cursor:n-resize;
+}
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 30vw;
+    background-color: rgba(128, 128, 128, 0.13);
+    transition: all 1s 0s;
+    transform:translateY(400px);
+}
+section:hover article {
+    transform:translateY(0px)
+}
+a {
+    text-decoration: none;
+    color:white;
+}

@@ -1,0 +1,20 @@
+html {
+    margin: 100px;
+}
+section {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80vw;
+    height: 5vh;
+    padding: 4px;
+}
+section article {
+    background-color: red;
+    width: 5vw;
+    height: 3vh;
+    margin: 10px;
+    transition: all 1s ease-in-out;
+}
+article:hover {
+    width: 98%;
+}
