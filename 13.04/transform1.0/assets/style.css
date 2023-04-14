@@ -1,0 +1,17 @@
+html {
+    width: 300px;
+    margin: 10rem auto; 
+}
+
+section {
+    background-color: rgba(255, 0, 0, 0.548);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 100px;
+    border-radius: 10%;
+    height: 30vh;
+    width: 30vh;
+    transition: all 1s 0.2s ease-in-out;
+    cursor:ew-resize;
+}
+section:hover {
+    transform: translate(50px, 100px) rotate(90deg);
+}

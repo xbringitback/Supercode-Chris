@@ -20,15 +20,13 @@ section article:nth-of-type(1) {
     transition: all 0.3s ease-out;
 }
 section article:nth-of-type(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(0, 255, 98);
     border-radius: 50%;
     height: 8vh;
     width: 5rem;
     left: 21.6rem; 
     position: absolute;
+    transition: all 0.6s ease-out;
 }
 section:active article:nth-of-type(1){
     transform:translateX(6vw);
@@ -36,5 +34,4 @@ section:active article:nth-of-type(1){
 section:active article:nth-of-type(2){
     left:52vw;
     transition: all 1s 0.3s ease-in;
-
 }

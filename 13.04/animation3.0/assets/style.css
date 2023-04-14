@@ -1,0 +1,32 @@
+html {
+    margin: 8vh 10vw;
+}
+section {
+    background-color: grey;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section img:hover {
+    animation: move 2s .2s infinite ease-in-out;
+}
+@keyframes move {
+    0%,100% {
+        box-shadow: 100px 150px 185px rgba(248, 0, 0, 0.8), 0px -150px 185px #ffc400;
+    }
+    25% {
+        box-shadow: 0px 150px 185px rgb(99, 248, 0), -100px -150px 185px #00ffaa;
+    }
+    50% {
+        box-shadow: 100px 150px 185px rgb(0, 204, 255), 0px -150px 185px #0066ff;
+    }
+    75% {
+        box-shadow: 0px 150px 185px rgb(140, 0, 255), -100px -150px 185px #f700ff;
+    }
+}

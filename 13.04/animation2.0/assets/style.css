@@ -1,0 +1,38 @@
+section {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50vw;
+    height: 50vh;
+    margin: 10% auto;
+}
+article {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: move 5s infinite;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+article p {
+    padding:10px;
+    cursor: pointer;
+}
+article:hover {
+    animation-play-state: paused;
+}
+@keyframes move {
+    0%,100% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+        transform: translateX(46.5vw);
+    }
+    50% {
+        background-color: blue;
+        transform: translate(46.5vw, 44vh);
+    }
+    75% {
+        background-color: yellow;
+        transform: translateY(44vh);
+    }
+}
