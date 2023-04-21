@@ -1,0 +1,110 @@
+$maincolor:rgba(0, 0, 255, 0.514);
+$standard-rem: 1rem;
+$centern:center;
+// ===================
+@mixin flexitin{
+	display: flex;
+	justify-content: $centern;
+}
+
+@mixin flexnowrap{
+	display: flex;
+	flex-flow:column nowrap;
+}
+@mixin flexrowwrap{
+	display: flex;
+	flex-flow: row wrap;
+}
+//======================
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	height: 6rem;
+	text-align: $centern;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 1.5rem;
+    h1,h2{
+        font-size: $standard-rem;
+    }
+}
+nav .nav_links {
+	margin-top: $standard-rem;
+	@include flexitin;
+	margin-bottom: $standard-rem;
+	background-color: $maincolor;
+    a{
+        padding:$standard-rem;
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+}
+
+
+.main {
+	@include flexnowrap;
+	justify-content: $centern;
+	align-items: $centern;
+    .section_text > h3{
+        text-align: $centern;
+    }
+}
+
+.section_text, .section_images {
+	margin: $standard-rem;
+}
+
+.section_images {
+	@include flexitin();
+	align-items: $centern;
+    img{
+        height: 12rem;
+        width: 18rem;
+        margin: 0 0.5rem 1rem 0.5rem
+    }
+}
+
+.aside {
+	@include flexnowrap();
+	justify-content: $centern;
+	margin: $standard-rem;
+    .first_aside, .second_aside, .third_aside, .fourth_aside {
+        border: 0.2rem solid $maincolor;    
+        padding: $standard-rem;
+        margin-bottom: $standard-rem;
+    }
+}
+.footer {
+	height: 5rem;
+	margin-top: $standard-rem;
+	background-color: $maincolor;
+    .footer_links{
+        @include flexitin();
+        margin-bottom: $standard-rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+	.section_images{
+    	@include flexrowwrap();
+	}
+
+	.section_text{
+    	width: 70%;
+	}
+
+	.aside{
+		@include flexrowwrap();
+	}
+
+	.first_aside, .second_aside, .third_aside, .fourth_aside{
+    	width: 45%;
+    	margin: 0.5rem;
+	}
+}

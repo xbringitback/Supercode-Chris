@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@mixin standard-text{
+    color: white;
+    text-align: center; 
+    text-transform: uppercase;
+}
+@mixin flexitin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    @include flexitin;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #6200ff 12.50%, #00fcd6 12.50%, #00fcd6 25%, #eaff00 25%, #eaff00 37.50%, #ff0000 37.50%, #ff0000 50%, #6200ff 50%, #6200ff 62.50%, #00fcd6 62.50%, #00fcd6 75%, #eaff00 75%, #eaff00 87.50%, #ff0000 87.50%, #ff0000 100%);
+    background-size: 100% 100%;
+    div h1 {
+        @include standard-text;
+        font-size: 15vw;
+    }
+    div h2{
+        @include standard-text;
+        font-size: 5vw;
+    }
+    p {
+        @include flexitin;
+        padding-left: 20px;
+        @include standard-text;
+        font-size: 5rem;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        background-color: rgb(233, 229, 4);
+        position: absolute;
+        top: 30%;
+        right: 10%;
+
+    }
+}

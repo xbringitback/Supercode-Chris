@@ -38,7 +38,6 @@ article:hover {
 @keyframes move {
     0%,100% {
         background-color: red;
-        animation-fill-mode:both;
     }
     25% {
         background-color: green;

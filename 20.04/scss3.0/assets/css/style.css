@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 50vw;
+  height: 20vh;
+  margin: 10% auto;
+}
+.container div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .ball1 {
+  background-color: red;
+  animation: move 1s 1.3s infinite ease-in-out;
+}
+.container .ball2 {
+  background-color: blue;
+  animation: move 1s 1.6s infinite ease-in-out;
+}
+.container .ball3 {
+  background-color: yellow;
+  animation: move 1s 1.9s infinite ease-in-out;
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(45vw);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

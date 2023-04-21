@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin ball {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@mixin animationball($delay){
+    animation: move 1s $delay infinite ease-in-out;
+}
+@mixin colors ($color) {
+    background-color: $color;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50vw;
+    height: 20vh;
+    margin: 10% auto;
+    
+    div{
+        @include ball;
+    }
+    .ball1{
+        @include colors(red);
+        @include animationball(1.3s);
+    }
+    .ball2{
+        @include colors(blue);
+        @include animationball(1.6s);
+    }
+    .ball3{
+        @include colors(yellow);
+        @include animationball(1.9s);
+    }
+    
+}
+@keyframes move {
+    0%,100% {
+        transform: translateX(0vw);
+    }
+    50% {
+        transform: translateX(45vw);
+    }
+}   
