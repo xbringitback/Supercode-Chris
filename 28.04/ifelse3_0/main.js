@@ -27,5 +27,5 @@ background.style.display = "flex";
 background.style.flexDirection = "column";
 background.style.justifyContent = "center";
 background.style.alignItems = "center";
-background.style.height = "100vh"
-background.style.fontSize = "2rem"
+background.style.height = "100vh";
+background.style.fontSize = "2rem";

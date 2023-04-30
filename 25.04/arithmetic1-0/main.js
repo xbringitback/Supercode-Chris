@@ -9,15 +9,15 @@
 // !verkürzte version
 
 let score = 0;
-score+=10;
+score=20;
 console.log(10 + score);
 
 
-let zahl =1;
+let zahl =2;
 zahl = zahl + 1;
 zahl +=1;
 
-zahl--;
+// zahl--;
 // zahl++;
-console.log(zahl++ + zahl);
+console.log(zahl + zahl + "istvier");
 

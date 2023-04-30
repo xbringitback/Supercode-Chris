@@ -1,0 +1,27 @@
+
+body {
+    width: 600px;
+    margin: 10rem auto;
+}
+
+main {
+    height: 40rem;
+    width: 35rem;
+    background-color: rgb(231,36,94);
+    background: linear-gradient(30deg, rgba(231,36,94,1) 0%, rgba(60,48,255,1) 99%);
+    border: 5px solid black;
+    text-align: center;
+    font-size: 2rem;
+}
+button {
+    margin: 10px;
+    height: 3rem;
+    width: 8rem;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+p {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
