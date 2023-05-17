@@ -11,6 +11,6 @@ let unserLager = {
     }
 };
 
-console.log(unserLager.schrank["Obere Schublade"].Ordner2);  // Ausgabe: "Geheimnisse"
-console.log(unserLager.schrank["Untere Schublade"]);        // Ausgabe: "Cola"
-console.log(unserLager.schreibtisch.schublade); 
+console.log(unserLager.schrank["Obere Schublade"].Ordner2);
+console.log(unserLager.schrank["Untere Schublade"]);
+console.log(unserLager.schreibtisch.schublade);
