@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './components/Counter'
 import Change from './components/Change'
 import Inputs from './components/Inputs'
+import Movies from './components/movie/Movie'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       {<Counter />}
       {<Change />}
       {<Inputs />}
+      {<Movies />}
 
     </>
   )
