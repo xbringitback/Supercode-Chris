@@ -1,0 +1,9 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.active {
+    background-color: rgb(0, 255, 225);
+    color: aliceblue;
+}

@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+nav.active {
+    background-color: rgb(0, 255, 225);
+    color: aliceblue;
+}
+header{
+  width: 100vw;
+  height: 40vh;
+  background: url(../public/img/Home.png) center no-repeat;
+  background-size: cover;
+}
+img {
+  max-width: 100%;
+}
